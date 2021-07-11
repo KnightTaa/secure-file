@@ -3,6 +3,7 @@ package com.example.securefils;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -53,6 +54,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         switch (v.getId()){
             case R.id.registerUser:
                 registerUser();
+                break;
+
+            case R.id.callsignin:
+                startActivity(new Intent(this,Login.class));
                 break;
         }
 
