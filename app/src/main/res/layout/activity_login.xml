@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#87CEEC"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="logoImage"
+        android:src="@drawable/sf"/>
+
+    <TextView
+        android:id="@+id/logoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there, Welcome Back"
+        android:transitionName="logoName"
+        android:textSize="40sp"
+        android:fontFamily="@font/bangers"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/form_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:transitionName="logo_desc"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="4dp"
+            android:elevation="6dp"
+            android:hint="Email"
+            android:paddingStart="8dp"
+            android:transitionName="username_tran" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="4dp"
+            android:elevation="6dp"
+            android:paddingStart="8dp"
+            android:background="@drawable/edit"
+            android:inputType="textPassword"
+            android:transitionName="password_tran"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password?"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:transitionName="button_tran"
+            android:background="#000"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/signup_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="New User? SIGN UP"
+            android:transitionName="signup_tran"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"/>
+
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>
