@@ -24,7 +24,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     private FirebaseAuth mAuth;
     private EditText name, username, email, password;
 
-    private Button registerUser;
+    private Button registerUser, signInUser;
 
 
     @Override
@@ -37,6 +37,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
         registerUser = (Button) findViewById(R.id.registerUser);
         registerUser.setOnClickListener(this);
+
+        signInUser = (Button) findViewById(R.id.callsignin);
+        signInUser.setOnClickListener(this);
 
         name = (EditText) findViewById(R.id.name);
         username = (EditText) findViewById(R.id.username);
